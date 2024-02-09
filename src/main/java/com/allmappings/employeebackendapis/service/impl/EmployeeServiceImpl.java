@@ -36,7 +36,6 @@ public class EmployeeServiceImpl implements EmployeeService {
         EmployeeAddress address = employee.getAddress();
         if (address != null) {
             EmployeeAddressDto addressDto = new EmployeeAddressDto();
-            addressDto.setEmpAddressId(address.getEmpAddressId());
             addressDto.setAreaStreet(address.getAreaStreet());
             addressDto.setCity(address.getCity());
             addressDto.setState(address.getState());
@@ -58,7 +57,6 @@ public class EmployeeServiceImpl implements EmployeeService {
         EmployeeAddressDto addressDto = dto.getAddress();
         if (addressDto != null) {
             EmployeeAddress address = new EmployeeAddress();
-            address.setEmpAddressId(addressDto.getEmpAddressId());
             address.setAreaStreet(addressDto.getAreaStreet());
             address.setCity(addressDto.getCity());
             address.setState(addressDto.getState());
