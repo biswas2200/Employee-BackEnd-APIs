@@ -80,7 +80,7 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public EmployeeDto getEmployeeById(Long id) {
         Employee employee = employeeRepository.findById(id)
-                .orElse(new Employee());
+                .orElse(null);
         return mapToDto(employee);
     }
 

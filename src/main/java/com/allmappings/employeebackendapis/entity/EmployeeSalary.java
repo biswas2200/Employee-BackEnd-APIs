@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @Entity
 public class EmployeeSalary {
     @Id
-    private Integer salaryId;
+    private Long salaryId;
     @Column(name = "emp_hra")
     private Double hra;
     @Column(name = "emp_netSalary")
